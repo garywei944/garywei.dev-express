@@ -1,10 +1,28 @@
 {
   "name": "garywei.dev",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "www.garywei.dev",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garywei944/garywei.dev.git"
+  },
+  "keywords": [
+    "garywei944",
+    "garywei",
+    "gary",
+    "ariseus"
+  ],
+  "author": "garywei944",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garywei944/garywei.dev/issues"
+  },
+  "homepage": "https://github.com/garywei944/garywei.dev#readme",
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",

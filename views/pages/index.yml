@@ -3,7 +3,39 @@ blogs: null
 education: null
 course: null
 awards: null
-experience: null
+experience:
+  -
+    quote: >-
+      <a href="https://github.com/garywei944/FMol"> FMol </a> is a simplified drug
+      discovery pipeline. I worked with <a href="https://www.linkedin.com/in/ej-yizhuo-chen/">
+          E.J. Chen </a> in the summer of 2020. FMol can generate SMILE molecular with
+      AlphaSMILES, predict protein structure with AlphaFold, and check the druggability with
+      fpocket/Amber.
+    img: "images/about_me_pic.jpg"
+    title: "FMol"
+    subtitle: "Project Developer, Summer 2020"
+  -
+    quote: >-
+      <p><a href="https://reachout.cics.umass.edu/"> ReachOUT </a> is a platform that helps
+          UMass students find career advisors. This was the project I worked on in a team of
+          25 in the Software Programming course and was transferred to UMass CICS Career
+          Department after the course end. </p>
+      <p> I was in the Cloud team working on deploying the dynamic website to the AWS
+          serverless services. I also wrote the ReadMe documentations on the <a
+                  href="https://github.com/cicscareers/320-S20-Track1"> GitHub Repo. </a></p>
+    img: "images/avatar_reachout.png"
+    title: "ReachOUT"
+    subtitle: "Cloud Team, Spring 2020"
+  -
+    quote: >-
+      I have been a member of the Personnel Department of UMass Amherst CSSA since
+      the fall of 2018. We hold several events such as Spring Festival Gala, Mid-Autumn
+      Festival Barbecue, and Campus Singer Competition every year. I'm one of the organizers
+      of all these events.
+    img: "images/avatar_cssa.png"
+    title: "UMass Amherst CSSA"
+    subtitle: "Member in The personnel department, 2018 - now"
+
 skills:
   -
     svg: "images/svg/001-options.svg"

@@ -87,7 +87,7 @@
                             out the way. </p>
                         <p class="gsap-reveal"><a class="btn btn-outline-pill btn-custom-light"
                                                   href="https://s3.us-east-1.amazonaws.com/garywei.dev/public/Guanghao%20Wei%20Resume.pdf">
-                            Download Resume </a></p>
+                                Download Resume </a></p>
                     </div>
                 </div>
             </div>
@@ -409,7 +409,7 @@
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
                         <div class="counter-v1 text-center">
                 <span class="number-wrap"> <span class="number number-counter" data-number="130"> 0 </span> <span
-                        class="append-text">
+                            class="append-text">
                     .0 </span> </span>
                             <span class="counter-label"> Credits earned </span>
                         </div>
@@ -417,7 +417,7 @@
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="counter-v1 text-center">
                 <span class="number-wrap"> <span class="number number-counter" data-number="21"> 0 </span> <span
-                        class="append-text">
+                            class="append-text">
                     .0 </span> </span>
                             <span class="counter-label"> Credits taking </span>
                         </div>
@@ -426,7 +426,7 @@
                         <div class="counter-v1 text-center">
                             <span class="number-wrap"> <span class="number number-counter"
                                                              data-number="4"> 0 </span> <span
-                                    class="append-text"> .0 </span> </span>
+                                        class="append-text"> .0 </span> </span>
                             <span class="counter-label"> Major GPA </span>
                         </div>
                     </div>
@@ -434,7 +434,7 @@
                         <div class="counter-v1 text-center">
                             <span class="number-wrap"> <span class="number number-counter"
                                                              data-number="3"> 0 </span> <span
-                                    class="append-text"> .978 </span> </span>
+                                        class="append-text"> .978 </span> </span>
                             <span class="counter-label"> Overall GPA </span>
                         </div>
                     </div>
@@ -558,58 +558,23 @@
             <div class="container">
                 <div class="section-heading-wrap text-center mb-5">
                     <h2 class="heading-h2 text-center divider"><span class="gsap-reveal"> Experience </span></h2> <span
-                        class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+                            class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
                 </div>
             </div>
             <div class="owl-carousel testimonial-slider" data-aos="fade-up">
-                <div>
-                    <div class="testimonial-v1">
-                        <div class="testimonial-inner-bg"><span class="quote">&ldquo;</span>
-                            <blockquote><a href="https://github.com/garywei944/FMol"> FMol </a> is a simplified drug
-                                discovery pipeline. I worked with <a href="https://www.linkedin.com/in/ej-yizhuo-chen/">
-                                    E.J. Chen </a> in the summer of 2020. FMol can generate SMILE molecular with
-                                AlphaSMILES, predict protein structure with AlphaFold, and check the druggability with
-                                fpocket/Amber.
-                            </blockquote>
-                        </div>
-                        <div class="testimonial-author-info"><img src="images/about_me_pic.jpg" alt="Gary Wei">
-                            <h3>FMol</h3> <span class="d-block position"> Project Developer, Summer 2020 </span>
+                <% for (i in experience) { %>
+                    <div>
+                        <div class="testimonial-v1">
+                            <div class="testimonial-inner-bg"><span class="quote">&ldquo;</span>
+                                <blockquote><%- experience[i].quote %></blockquote>
+                            </div>
+                            <div class="testimonial-author-info"><img src="<%= experience[i].img %>" alt="Image">
+                                <h3><%- experience[i].title %></h3> <span
+                                        class="d-block position"><%- experience[i].subtitle %></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="testimonial-v1">
-                        <div class="testimonial-inner-bg"><span class="quote">&ldquo;</span>
-                            <blockquote>
-                                <p><a href="https://reachout.cics.umass.edu/"> ReachOUT </a> is a platform that helps
-                                    UMass students find career advisors. This was the project I worked on in a team of
-                                    25 in the Software Programming course and was transferred to UMass CICS Career
-                                    Department after the course end. </p>
-                                <p> I was in the Cloud team working on deploying the dynamic website to the AWS
-                                    serverless services. I also wrote the ReadMe documentations on the <a
-                                            href="https://github.com/cicscareers/320-S20-Track1"> GitHub Repo. </a></p>
-                            </blockquote>
-                        </div>
-                        <div class="testimonial-author-info"><img src="images/avatar_reachout.png" alt="ReachOUT">
-                            <h3> ReachOUT </h3> <span class="d-block position"> Cloud Team, Spring 2020 </span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="testimonial-v1">
-                        <div class="testimonial-inner-bg"><span class="quote">&ldquo;</span>
-                            <blockquote> I have been a member of the Personnel Department of UMass Amherst CSSA since
-                                the fall of 2018. We hold several events such as Spring Festival Gala, Mid-Autumn
-                                Festival Barbecue, and Campus Singer Competition every year. I'm one of the organizers
-                                of all these events.
-                            </blockquote>
-                        </div>
-                        <div class="testimonial-author-info"><img src="images/avatar_cssa.png" alt="CSSA"
-                                                                  id="experience-cssa">
-                            <h3>UMass Amherst CSSA</h3> <span class="d-block position">Member in The personnel department, 2018 - now </span>
-                        </div>
-                    </div>
-                </div>
+                <% } %>
             </div>
         </div>
         <!-- END Experience -->
@@ -621,7 +586,7 @@
                     <span class="gsap-reveal"> <img alt="divider" src="images/divider.png" width="76"/> </span>
                 </div>
                 <div class="row gutter-v3">
-                    <% for(i in skills) {%>
+                    <% for(i in skills) { %>
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
                                 <div class="wrap-icon mb-3">
@@ -690,60 +655,7 @@
                             <!--                                </address>-->
                             <!--                            </div>-->
                             <div class="gsap-reveal d-block">
-                                <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                                    <span class="d-block contact-info-label"> Social Media </span>
-                                    <div class="wrap-icon mb-3">
-                                        <a href="https://www.linkedin.com/in/garywei944/"> <img alt="LinkedIn"
-                                                                                                src="images/svg/linkedin.svg"
-                                                                                                width="36"/> </a>
-                                        <a href="https://www.facebook.com/garywei944"> <img alt="Facebook"
-                                                                                            src="images/svg/facebook.svg"
-                                                                                            width="36"/> </a>
-                                        <a href="https://twitter.com/Garywei944"> <img alt="Twitter"
-                                                                                       src="images/svg/twitter.svg"
-                                                                                       width="36"/> </a>
-                                        <a href="https://www.instagram.com/garywei944/"> <img alt="Instagram"
-                                                                                              src="images/svg/instagram.svg"
-                                                                                              width="36"/> </a>
-                                        <a href="https://weibo.com/u/3169486720"> <img alt="Sina Weibo"
-                                                                                       src="images/svg/sinaweibo.svg"
-                                                                                       width="36"/> </a>
-                                    </div>
-                                </div>
-                                <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                                    <span class="d-block contact-info-label"> Profiles </span>
-                                    <div class="wrap-icon mb-3">
-                                        <a href="https://github.com/garywei944"> <img alt="GitHub"
-                                                                                      src="images/svg/github.svg"
-                                                                                      width="36"/> </a>
-                                        <a href="https://wakatime.com/@garywei944"> <img alt="WakaTime"
-                                                                                         src="images/svg/wakatime.svg"
-                                                                                         width="36"/> </a>
-                                        <a href="https://www.youtube.com/channel/UCj8ln8nYtPl4lA_6FrWDtyg"> <img
-                                                alt="YouTube" src="images/svg/youtube.svg" width="36"/> </a>
-                                        <a href="https://space.bilibili.com/3255441"> <img alt="Bilibili"
-                                                                                           src="images/svg/bilibili.svg"
-                                                                                           width="36"/> </a>
-                                        <a href="https://steamcommunity.com/profiles/76561198306044214/"> <img
-                                                alt="Steam" src="images/svg/steam.svg" width="36"/> </a>
-                                        <a href="https://www.reddit.com/user/garywei944"> <img alt="Reddit"
-                                                                                               src="images/svg/reddit.svg"
-                                                                                               width="36"/> </a>
-                                        <a href="https://www.zhihu.com/people/wei-guang-hao-88"> <img alt="Zhihu"
-                                                                                                      src="images/svg/zhihu.svg"
-                                                                                                      width="36"/> </a>
-                                        <br>
-                                        <a href="https://leetcode.com/garywei944/"> <img alt="LeetCode"
-                                                                                         src="images/svg/leetcode.svg"
-                                                                                         width="36"/> </a>
-                                        <a href="https://www.kaggle.com/garywei944"> <img alt="kaggle"
-                                                                                          src="images/svg/kaggle.svg"
-                                                                                          width="36"/> </a>
-                                        <a href="https://blog.csdn.net/garywei944"> <img alt="csdn"
-                                                                                         src="images/svg/csdn.svg"
-                                                                                         width="108"/> </a>
-                                    </div>
-                                </div>
+                                <%- include(appRoot+'/views/partials/profiles') %>
                             </div>
                         </div>
                     </div>
@@ -754,7 +666,6 @@
     <!-- END .unslate_co-site-inner -->
 
     <%- include(appRoot+'/views/partials/footer') %>
-
 
     <!-- Loader -->
     <div id="unslate_co--overlayer"></div>

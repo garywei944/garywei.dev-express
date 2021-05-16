@@ -85,9 +85,11 @@
                                     href="https://github.com/garywei944/FMol"> Drug Discovery </a> . </p>
                         <p class="mb-4 gsap-reveal"> My dream is to do something BIG, and I'm still on my way to find
                             out the way. </p>
-                        <p class="gsap-reveal"><a class="btn btn-outline-pill btn-custom-light"
-                                                  href="https://s3.us-east-1.amazonaws.com/garywei.dev/public/Guanghao%20Wei%20Resume.pdf">
-                                Download Resume </a></p>
+                        <p class="gsap-reveal">
+                            <a class="btn btn-outline-pill btn-custom-light"
+                               href="https://s3.us-east-1.amazonaws.com/garywei.dev/public/Guanghao%20Wei%20Resume.pdf">
+                                Download Resume </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -139,207 +141,22 @@
                         </div>
                     </div>
                     <div class="row gutter-isotope-item" id="posts">
-
-
-
-                        <div class="item ai col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                            <a class="portfolio-item isotope-item gsap-reveal-img" data-id="1"
-                               href="https://github.com/garywei944/aris_mcm_2021_c">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> MCM/ICM 2021 Problem C - RRS Combine Model </h3>
-                                        <p> AI, Math Modeling </p>
+                        <% for (let i in projects) { %>
+                            <div class="item <%= projects[i].class %> col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                                <a class="portfolio-item isotope-item gsap-reveal-img" data-id="<%= i %>"
+                                   href="<%= projects[i].link %>">
+                                    <div class="overlay">
+                                        <span class="wrap-icon icon-link2"> </span>
+                                        <div class="portfolio-item-content">
+                                            <h3><%= projects[i].title %></h3>
+                                            <p><%= projects[i].note %></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <img alt="MCM/ICM 2021 Problem C" class="lazyload img-fluid"
-                                     src="images/projects/project_mcm_2021_c.jpg"/>
-                            </a>
-                        </div>
-
-
-
-                        <div class="item ai col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                            <a class="portfolio-item isotope-item gsap-reveal-img" data-id="1"
-                               href="https://github.com/garywei944/aris_mcm_2021_c">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> MCM/ICM 2021 Problem C - RRS Combine Model </h3>
-                                        <p> AI, Math Modeling </p>
-                                    </div>
-                                </div>
-                                <img alt="MCM/ICM 2021 Problem C" class="lazyload img-fluid"
-                                     src="images/projects/project_mcm_2021_c.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item ai col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                            <a class="portfolio-item isotope-item gsap-reveal-img" data-id="1"
-                               href="https://github.com/garywei944/aris_kaggle_lish-moa">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> Mechanisms of Action (MoA) Prediction </h3>
-                                        <p> AI, Drug Discovery </p>
-                                    </div>
-                                </div>
-                                <img alt="Kaggle lish-moa" class="lazyload img-fluid"
-                                     src="images/projects/project_kaggle_lish-moa.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item ai col-sm-12 col-md-12 col-lg-8 isotope-mb-2">
-                            <a class="portfolio-item isotope-item gsap-reveal-img" data-id="1"
-                               href="https://github.com/garywei944/FMol">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> FMol </h3>
-                                        <p> AI, Drug Discovery </p>
-                                    </div>
-                                </div>
-                                <img alt="FMol" class="lazyload img-fluid" src="images/projects/project_fmol.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item os col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="2"
-                               href="https://github.com/garywei944/eva_init">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> eva_init </h3>
-                                        <p> OS, Linux, Bash </p>
-                                    </div>
-                                </div>
-                                <img alt="eva_init" class="lazyload img-fluid"
-                                     src="images/projects/project_eva_init.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item web col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="2"
-                               href="https://reachout.cics.umass.edu/login">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> ReachOUT </h3>
-                                        <p> Web, AWS </p>
-                                    </div>
-                                </div>
-                                <img alt="ReachOUT" class="lazyload img-fluid"
-                                     src="images/projects/project_reachout.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item web col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="2"
-                               href="https://github.com/cicscareers/320-S20-Track1">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> ReachOUT - GitHub Repo </h3>
-                                        <p> Web, AWS </p>
-                                    </div>
-                                </div>
-                                <img alt="ReachOUT" class="lazyload img-fluid"
-                                     src="images/projects/project_reachout_github.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item iot col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="3"
-                               href="https://www.youtube.com/watch?v=_SQXAUgm1m4">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> Small Wifi System </h3>
-                                        <p> IoT </p>
-                                    </div>
-                                </div>
-                                <img alt="IoT Small WiFi Server" class="lazyload img-fluid"
-                                     src="images/projects/project_iot_wifi.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item iot col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="3"
-                               href="https://www.youtube.com/watch?v=mOR20ydotqU">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> Room Security System </h3>
-                                        <p> IoT </p>
-                                    </div>
-                                </div>
-                                <img alt="IoT Room Security System" class="lazyload img-fluid"
-                                     src="images/projects/project_iot_security.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item game col-sm-12 col-md-12 col-lg-8 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="3"
-                               href="project_cs590g_final_project.html">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> Untitled Tower Defense </h3>
-                                        <p> Game, Unity </p>
-                                    </div>
-                                </div>
-                                <img alt="Game Untitled Tower Defense" class="lazyload img-fluid"
-                                     src="images/projects/project_untitled_tower_defense.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item game col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="3"
-                               href="project_cs590g_p5.html">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> Randomly Generated Maze </h3>
-                                        <p> Game, Unity </p>
-                                    </div>
-                                </div>
-                                <img alt="Game Randomly Generated Maze" class="lazyload img-fluid"
-                                     src="images/projects/project_randomly_generated_maze.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item game col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="3"
-                               href="project_cs590g_p3.html">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> Action Game - Claire Adventure </h3>
-                                        <p> Game, Unity </p>
-                                    </div>
-                                </div>
-                                <img alt="Game Claire Adventure" class="lazyload img-fluid"
-                                     src="images/projects/project_claire_adventure.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item game col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="3"
-                               href="project_cs590g_p1.html">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> My First Game - Astronaut </h3>
-                                        <p> Game, Unity </p>
-                                    </div>
-                                </div>
-                                <img alt="Game Astronaut" class="lazyload img-fluid"
-                                     src="images/projects/project_astronaut.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item other col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                            <a class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="3"
-                               href="https://github.com/garywei944/icloud_vcf_contacts_to_google_csv_format">
-                                <div class="overlay">
-                                    <span class="wrap-icon icon-link2"> </span>
-                                    <div class="portfolio-item-content">
-                                        <h3> cvf_to_csv </h3>
-                                        <p> Other, python </p>
-                                    </div>
-                                </div>
-                                <img alt="cvf_to_csv" class="lazyload img-fluid"
-                                     src="images/projects/project_vcf_to_csv.jpg"/>
-                            </a>
-                        </div>
+                                    <img alt="Image" class="lazyload img-fluid"
+                                         src="<%= projects[i].img %>"/>
+                                </a>
+                            </div>
+                        <% } %>
                     </div>
                 </div>
             </div>
@@ -355,9 +172,9 @@
 
 
                 <div class="row gutter-v4 align-items-stretch">
-
                     <% for (let i in blogs) { %>
-                        <div class="col-sm-6 col-md-6 <%= blogs[i].class %> blog-post-entry" data-aos="fade-up" data-aos-delay="0">
+                        <div class="col-sm-6 col-md-6 <%= blogs[i].class %> blog-post-entry" data-aos="fade-up"
+                             data-aos-delay="0">
                             <a href="<%= blogs[i].link %>"
                                class="grid-item blog-item w-100 h-100">
                                 <div class="overlay">

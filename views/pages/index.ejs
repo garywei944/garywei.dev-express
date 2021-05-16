@@ -370,31 +370,18 @@
                     <span class="gsap-reveal"> <img alt="divider" src="images/divider.png" width="76"/> </span>
                 </div>
                 <div class="row gutter-v3">
-                    <div class="col-md-6 col-lg-4 mb-4" id="education-bhsf">
-                        <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                            <div class="wrap-icon mb-3">
-                                <img alt="BHSF" src="images/avatar_bhsf.png" width="45"/>
+                    <% for (let i in education) { %>
+                        <div class="col-md-6 col-lg-4 mb-4" id="<%- education[i].id %>">
+                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                                <div class="wrap-icon mb-3">
+                                    <img alt="Image" src="<%- education[i].img %>" width="45"/>
+                                </div>
+                                <h3><%- education[i].name %></h3><br>
+                                <p><%- education[i].time %></p>
+                                <%- education[i].note %>
                             </div>
-                            <h3> Beijing No.4 High School <br/></h3>
-                            <p>2015 - 2018</p>
-                            <p> I have the honor of graduating from one of the best high school in China, Beijing No.4
-                                High School. </p>
-                            <p> The memories I cherished most were being a player on school's soccer team. </p>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4" id="education-umass">
-                        <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                            <div class="wrap-icon mb-3">
-                                <img alt="UMass" src="images/avatar_umass.png" width="45"/>
-                            </div>
-                            <h3> University of Massachusetts Amherst <br/></h3>
-                            <p> 2018 - now </p>
-                            <p> I double major in Mathematics (Applied Math and Math Computing concentrations) and
-                                Computer Science. </p>
-                            <p> I also minor in Japanese as second foreign language. </p>
-                            <p> The expected graduation date is May 2022. </p>
-                        </div>
-                    </div>
+                    <% } %>
                 </div>
             </div>
         </div>
@@ -408,7 +395,8 @@
                 <div class="row pt-5">
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
                         <div class="counter-v1 text-center">
-                <span class="number-wrap"> <span class="number number-counter" data-number="130"> 0 </span> <span
+                <span class="number-wrap"> <span class="number number-counter"
+                                                 data-number="<%= course.earned %>"> 0 </span> <span
                             class="append-text">
                     .0 </span> </span>
                             <span class="counter-label"> Credits earned </span>
@@ -416,7 +404,8 @@
                     </div>
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="counter-v1 text-center">
-                <span class="number-wrap"> <span class="number number-counter" data-number="21"> 0 </span> <span
+                <span class="number-wrap"> <span class="number number-counter"
+                                                 data-number="<%= course.taking %>"> 0 </span> <span
                             class="append-text">
                     .0 </span> </span>
                             <span class="counter-label"> Credits taking </span>
@@ -425,67 +414,37 @@
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="counter-v1 text-center">
                             <span class="number-wrap"> <span class="number number-counter"
-                                                             data-number="4"> 0 </span> <span
-                                        class="append-text"> .0 </span> </span>
+                                                             data-number="<%= course.major[0] %>"> 0 </span> <span
+                                        class="append-text"> .<%= course.major[1] %> </span> </span>
                             <span class="counter-label"> Major GPA </span>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="counter-v1 text-center">
                             <span class="number-wrap"> <span class="number number-counter"
-                                                             data-number="3"> 0 </span> <span
-                                        class="append-text"> .978 </span> </span>
+                                                             data-number="<%= course.overall[0] %>"> 0 </span> <span
+                                        class="append-text"> .<%= course.overall[1] %> </span> </span>
                             <span class="counter-label"> Overall GPA </span>
                         </div>
                     </div>
                 </div>
                 <br>
                 <div class="row justify-content-between">
-                    <div class="col-md-6">
-                        <div class="contact-info-v1">
-                            <div class="gsap-reveal d-block">
-                                <span class="d-block contact-info-label"> Computer Science </span>
-                                <ul>
-                                    <li>Artificial Intelligence</li>
-                                    <li>Computer Networks</li>
-                                    <li>Game Programming</li>
-                                    <li>Internet of Things</li>
-                                    <li>Intro. Algorithms</li>
-                                    <li>Intro. Computer and Network Security</li>
-                                    <li>Intro. Software Engineering</li>
-                                    <li>Machine Learning</li>
-                                    <li>Operating Systems</li>
-                                </ul>
+
+                    <% for (let i in course.list) { %>
+                        <div class="col-md-6">
+                            <div class="contact-info-v1">
+                                <div class="gsap-reveal d-block">
+                                    <span class="d-block contact-info-label"><%- course.list[i].title %></span>
+                                    <ul>
+                                        <% for (let j in course.list[i].items) { %>
+                                            <li><%- course.list[i].items[j] %></li>
+                                        <% } %>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="contact-info-v1">
-                            <div class="gsap-reveal d-block">
-                                <span class="d-block contact-info-label"> Mathematics </span>
-                                <ul>
-                                    <li>Advanced Calculus</li>
-                                    <li>Intro. Abstract Algebra I</li>
-                                    <li>Intro. Modern Analysis</li>
-                                    <li>Intro. Scientific Computing</li>
-                                    <li>Linear Algebra for Applied Mathematics</li>
-                                    <li>Mathematical Modeling</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="contact-info-v1">
-                            <div class="gsap-reveal d-block">
-                                <span class="d-block contact-info-label"> Major Course Taking (Spring 2021) </span>
-                                <ul>
-                                    <li> Web Programming</li>
-                                    <li> Formal Language Theory</li>
-                                    <li> Intelligent Visual Computing (Grad Level)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <% } %>
                 </div>
             </div>
         </div>
@@ -499,56 +458,18 @@
                     <span class="gsap-reveal"> <img alt="divider" src="images/divider.png" width="76"/> </span>
                 </div>
                 <div class="row gutter-v3">
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                            <div class="wrap-icon mb-3">
-                                <img alt="MCM/ICM" src="images/avatar_mcm.jpg" width="45"/>
+                    <% for (let i in awards) { %>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                                <div class="wrap-icon mb-3">
+                                    <img alt="Image" src="<%= awards[i].img %>" width="45"/>
+                                </div>
+                                <h3><%- awards[i].title %></h3><br>
+                                <p><%- awards[i].date %></p>
+                                <%- awards[i].content %>
                             </div>
-                            <h3> MCM: The Mathematical Contest in Modeling <br/></h3>
-                            <p> Feb 2021</p>
-                            <p>We came up with a combined model to evaluate the accuracy of the Asian Giant Hornet
-                                sightings reported in Washington State. </p>
-                            <p>RRS: Random Forest + ResNet-18 CNN + Spatial Distribution Reproduction Model.</p>
-                            <p>Refer to the <a href="https://github.com/garywei944/aris_mcm_2021_c">GitHub Repo</a> for
-                                my implementation and more information.</p>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                            <div class="wrap-icon mb-3">
-                                <img alt="UMass Amherst CNS" src="images/avatar_umass.png" width="45"/>
-                            </div>
-                            <h3> Jacob-Cohen-Killam Mathematics Competition <br/></h3>
-                            <p> Apr 2019 & 2020</p>
-                            <p> 2nd Place in 34th & 35th JCK Competition</p>
-                            <p> $1,000 Awarded each year. ($2,000 in total) </p>
-                            <p> Similar but easier competition with IMO (International Mathematical Olympiad) </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                            <div class="wrap-icon mb-3">
-                                <img alt="DataFest" src="images/avatar_datafest.png" width="45"/>
-                            </div>
-                            <h3> ASA Five College DataFest <br/></h3>
-                            <p> Mar 2019 </p>
-                            <p> Leader of a team of 5 </p>
-                            <p> Process and Analysis big physical data from The Canadian National Women's Rugby Team
-                                with R (R Studio) </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                            <div class="wrap-icon mb-3">
-                                <img alt="NOIP" src="images/avatar_noi.png" width="45"/>
-                            </div>
-                            <h3> National Olympiad in Informatics in Provinces <br/></h3>
-                            <p> Nov 2016 </p>
-                            <p> 3rd Prize in NOIP Beijing, China </p>
-                            <p> Individual competition: Code and solve problems with algorithms and data structures in
-                                C/C++. </p>
-                        </div>
-                    </div>
+                    <% } %>
                 </div>
             </div>
         </div>
@@ -562,7 +483,7 @@
                 </div>
             </div>
             <div class="owl-carousel testimonial-slider" data-aos="fade-up">
-                <% for (i in experience) { %>
+                <% for (let i in experience) { %>
                     <div>
                         <div class="testimonial-v1">
                             <div class="testimonial-inner-bg"><span class="quote">&ldquo;</span>
@@ -586,7 +507,7 @@
                     <span class="gsap-reveal"> <img alt="divider" src="images/divider.png" width="76"/> </span>
                 </div>
                 <div class="row gutter-v3">
-                    <% for(i in skills) { %>
+                    <% for(let i in skills) { %>
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
                                 <div class="wrap-icon mb-3">
@@ -676,6 +597,3 @@
     <script src="js/scripts-dist.js"></script>
     <script src="js/main.js"></script>
 </div>
-</body>
-
-</html>

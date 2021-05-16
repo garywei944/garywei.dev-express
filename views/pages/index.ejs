@@ -139,6 +139,26 @@
                         </div>
                     </div>
                     <div class="row gutter-isotope-item" id="posts">
+
+
+
+                        <div class="item ai col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                            <a class="portfolio-item isotope-item gsap-reveal-img" data-id="1"
+                               href="https://github.com/garywei944/aris_mcm_2021_c">
+                                <div class="overlay">
+                                    <span class="wrap-icon icon-link2"> </span>
+                                    <div class="portfolio-item-content">
+                                        <h3> MCM/ICM 2021 Problem C - RRS Combine Model </h3>
+                                        <p> AI, Math Modeling </p>
+                                    </div>
+                                </div>
+                                <img alt="MCM/ICM 2021 Problem C" class="lazyload img-fluid"
+                                     src="images/projects/project_mcm_2021_c.jpg"/>
+                            </a>
+                        </div>
+
+
+
                         <div class="item ai col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
                             <a class="portfolio-item isotope-item gsap-reveal-img" data-id="1"
                                href="https://github.com/garywei944/aris_mcm_2021_c">
@@ -335,29 +355,23 @@
 
 
                 <div class="row gutter-v4 align-items-stretch">
-                    <div class="col-sm-6 col-md-6 col-lg-8 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
-                        <a href="https://blog.csdn.net/garywei944/article/details/114367381"
-                           class="grid-item blog-item w-100 h-100">
-                            <div class="overlay">
-                                <div class="portfolio-item-content">
-                                    <h3>简单理解Bash中子进程 (child process)和子shell (subshell)的区别以及SHLVL和BASH_SUBSHELL</h3>
-                                    <p class="post-meta">CSDN <span class="small">&bullet;</span> OS, Linux, Bash</p>
+
+                    <% for (let i in blogs) { %>
+                        <div class="col-sm-6 col-md-6 <%= blogs[i].class %> blog-post-entry" data-aos="fade-up" data-aos-delay="0">
+                            <a href="<%= blogs[i].link %>"
+                               class="grid-item blog-item w-100 h-100">
+                                <div class="overlay">
+                                    <div class="portfolio-item-content">
+                                        <h3><%= blogs[i].title %></h3>
+                                        <p class="post-meta"><%= blogs[i].note1 %>
+                                            <span class="small">&bullet;</span><%= blogs[i].note2 %>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src="images/wlop/6_wm.jpg" class="lazyload" alt="Blog Subshell"/>
-                        </a>
-                    </div>
-                    <!--                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="100">-->
-                    <!--                        <a href="blog-single.html" class="grid-item blog-item w-100 h-100">-->
-                    <!--                            <div class="overlay">-->
-                    <!--                                <div class="portfolio-item-content">-->
-                    <!--                                    <h3>A Mounteering Guide For Beginners</h3>-->
-                    <!--                                    <p class="post-meta">By Joefrey <span class="small">&bullet;</span> 5 mins read</p>-->
-                    <!--                                </div>-->
-                    <!--                            </div>-->
-                    <!--                            <img src="images/post_2.jpg" class="lazyload" alt="Image"/>-->
-                    <!--                        </a>-->
-                    <!--                    </div>-->
+                                <img src="<%= blogs[i].img %>" class="lazyload" alt="Blog Subshell"/>
+                            </a>
+                        </div>
+                    <% } %>
                 </div>
             </div>
         </div>

@@ -1,5 +1,11 @@
 projects: null
-blogs: null
+blogs:
+  - class: "col-lg-8"
+    link: "https://blog.csdn.net/garywei944/article/details/114367381"
+    title: "简单理解Bash中子进程 (child process)和子shell (subshell)的区别以及SHLVL和BASH_SUBSHELL"
+    note1: "CSDN"
+    note2: "OS, Linux, Bash"
+    img: "images/wlop/6_wm.jpg"
 
 education:
   - id: "education-bhsf"

@@ -8,8 +8,10 @@
 ### Added
 - Apply express project structure
 - Duplicated from [garywei944.github.io](https://github.com/garywei944/garywei944.github.io)
+
+### Changed
 - Reconstruct all web pages to use ejs view render
-- Add GitHub Workflow to deploy the website to AWS ElasticBeanstalk
+- Update bio
 
 ### Removed
 - Remove error.html

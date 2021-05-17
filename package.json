@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --proxy 'localhost:5000' --files 'public' 'src' 'views'"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "js-yaml": "^4.1.0",
     "morgan": "~1.9.1"
   }
 }

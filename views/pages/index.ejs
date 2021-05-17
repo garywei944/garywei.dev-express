@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title> Gary Wei | &AElig;r1S - No Life is Enough </title>
+    <title><%= title %></title>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 
@@ -49,13 +49,12 @@
 
         <%- include(appRoot+'/views/partials/nav') %>
 
-        <div class="cover-v1 jarallax" id="home-section" style="background-image: url('/images/cover_bg.jpg');">
+        <div class="cover-v1 jarallax" id="home-section" style="background-image: url('<%= bg_img %>');">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-7 mx-auto text-center">
                         <h1 class="heading gsap-reveal-hero"> Gary Wei </h1>
-                        <h2 class="subheading gsap-reveal-hero"> Hi! Here's Gary, a Computer Science &amp; Mathematics
-                            UGrad at UMass Amherst </h2>
+                        <h2 class="subheading gsap-reveal-hero"><%- bio %></h2>
                     </div>
                 </div>
             </div>
@@ -78,18 +77,7 @@
                     </div>
                     <div class="col-lg-4 pr-lg-5">
                         <h3 class="mb-4 heading-h3"><span class="gsap-reveal"> Guanghao Wei </span></h3>
-                        <p class="lead gsap-reveal"> I am pursuing my bachelor's degree of Mathematics and Computer
-                            Science at <a href="https://www.umass.edu/"> UMass Amherst </a> . </p>
-                        <p class="lead gsap-reveal"> I'm a developer interested in Artificial Intelligence,
-                            Cybersecurity, IoT, and Game Development. I also have project experience in <a
-                                    href="https://github.com/garywei944/FMol"> Drug Discovery </a> . </p>
-                        <p class="mb-4 gsap-reveal"> My dream is to do something BIG, and I'm still on my way to find
-                            out the way. </p>
-                        <p class="gsap-reveal">
-                            <a class="btn btn-outline-pill btn-custom-light"
-                               href="https://s3.us-east-1.amazonaws.com/garywei.dev/public/Guanghao%20Wei%20Resume.pdf">
-                                Download Resume </a>
-                        </p>
+                        <%- about.bio %>
                     </div>
                 </div>
             </div>

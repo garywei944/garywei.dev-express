@@ -1,3 +1,22 @@
+title: "Gary Wei | &AElig;r1S - No Life is Enough"
+bg_img: "/images/wlop/wlop (6)_wm.jpg"
+bio: "Hi! Here's Gary, a Computer Science &amp; Mathematics UGrad at UMass Amherst"
+
+about:
+  bio: >-
+    <p class="lead gsap-reveal"> I am pursuing my bachelor's degree of Mathematics and Computer
+        Science at <a href="https://www.umass.edu/"> UMass Amherst </a> . </p>
+    <p class="lead gsap-reveal"> I'm a developer interested in Artificial Intelligence,
+        Cybersecurity, IoT, and Game Development. I also have project experience in <a
+                href="https://github.com/garywei944/FMol"> Drug Discovery </a> . </p>
+    <p class="mb-4 gsap-reveal"> My dream is to do something BIG, and I'm still on my way to find
+        out the way. </p>
+    <p class="gsap-reveal">
+        <a class="btn btn-outline-pill btn-custom-light"
+           href="https://s3.us-east-1.amazonaws.com/garywei.dev/public/Guanghao%20Wei%20Resume.pdf">
+            Download Resume </a>
+    </p>
+
 projects:
   - class: "ai"
     link: "https://github.com/garywei944/aris_mcm_2021_c"

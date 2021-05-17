@@ -24,6 +24,9 @@
     "url": "https://github.com/garywei944/garywei.dev/issues"
   },
   "homepage": "https://github.com/garywei944/garywei.dev#readme",
+  "engines": {
+    "node": "^16.1.0"
+  },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",

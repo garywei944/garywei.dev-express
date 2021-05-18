@@ -1,0 +1,6 @@
+# Projects
+ ✔ CICS490E @done (21-05-17 17:22)
+ ✔ CG3 @done (21-05-17 16:19)
+ ✔ KPConv @done (21-05-17 17:22)
+
+ ☐ skills

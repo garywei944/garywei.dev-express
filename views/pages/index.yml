@@ -218,13 +218,13 @@ experience:
 
 skills:
   - svg: "/images/svg/001-options.svg"
-    title: "Artificial Intelligence"
+    title: "Machine Learning"
     content: >-
       <p> I have been researching the use of AI in Drug Discovery. </p>
       <p><a href="https://github.com/garywei944/FMol"> FMol </a> is a simplified drug discovery pipeline project I did
       in the summer of 2020. </p>
   - svg: "/images/svg/002-chat.svg"
-    title: Amazon Web Services
+    title: "Full Stack Development"
     content: >-
       <p> I worked in the Cloud Team of <a href="https://reachout.cics.umass.edu/login">
       ReachOUT </a> to deploy the dynamic website to AWS serverless services. </p>

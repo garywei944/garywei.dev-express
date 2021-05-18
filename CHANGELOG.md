@@ -4,6 +4,11 @@
 
 
 
+## 1.0.1
+### Added
+- Add new projects and update some skills
+
+
 ## 1.0.0
 ### Added
 - Apply express project structure

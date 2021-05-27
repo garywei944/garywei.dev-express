@@ -187,10 +187,10 @@ experience:
 
 skills:
   - svg: "/images/svg/001-options.svg"
-    title: "Machine Learning"
+    title: "Machine Learning <br>& Data Science"
     content: "machine_learning"
   - svg: "/images/svg/002-chat.svg"
-    title: "Full Stack Development"
+    title: "Full Stack & AWS Cloud"
     content: "full_stack"
   - svg: "/images/svg/003-contact-book.svg"
     title: "All Platform Development"

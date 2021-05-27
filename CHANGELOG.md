@@ -2,7 +2,12 @@
 
 ## Unreleased
 
+## 1.0.2
+### Added
+- Add date for each project
 
+### Changed
+- Split all .ejs format text into single files for better maintainability
 
 ## 1.0.1
 ### Added

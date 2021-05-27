@@ -86,14 +86,7 @@
                         <div class="col-lg-4 pl-lg-5">
                             <div class="unslate_co--sticky">
                                 <div class="row">
-                                    <% for (let i in sections) { %>
-                                        <div class="col-md-12 mb-4">
-                                            <div class="detail-v1">
-                                                <span class="detail-label"><%- sections[i].title %></span>
-                                                <%- sections[i].content %>
-                                            </div>
-                                        </div>
-                                    <% } %>
+                                    <%- include(appRoot+'/views/pages/projects/'+side) %>
                                 </div>
                             </div>
                         </div>

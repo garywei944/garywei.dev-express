@@ -197,7 +197,7 @@
                                 </div>
                                 <h3><%- education[i].name %></h3><br>
                                 <p><%- education[i].time %></p>
-                                <%- education[i].note %>
+                                <%- include(appRoot+'/views/pages/education/'+education[i].note) %>
                             </div>
                         </div>
                     <% } %>
@@ -235,7 +235,7 @@
                             <span class="number-wrap"> <span class="number number-counter"
                                                              data-number="<%= course.major[0] %>"> 0 </span> <span
                                         class="append-text"> .<%= course.major[1] %> </span> </span>
-                            <span class="counter-label"> Major GPA </span>
+                            <span class="counter-label"> Major GPA (UGrad) </span>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
@@ -285,7 +285,7 @@
                                 </div>
                                 <h3><%- awards[i].title %></h3><br>
                                 <p><%- awards[i].date %></p>
-                                <%- awards[i].content %>
+                                <%- include(appRoot+'/views/pages/awards/'+awards[i].content) %>
                             </div>
                         </div>
                     <% } %>
@@ -306,7 +306,7 @@
                     <div>
                         <div class="testimonial-v1">
                             <div class="testimonial-inner-bg"><span class="quote">&ldquo;</span>
-                                <blockquote><%- experience[i].quote %></blockquote>
+                                <blockquote><%- include(appRoot+'/views/pages/experience/'+experience[i].quote) %></blockquote>
                             </div>
                             <div class="testimonial-author-info"><img src="<%= experience[i].img %>" alt="Image">
                                 <h3><%- experience[i].title %></h3> <span
@@ -333,7 +333,7 @@
                                     <img alt="Image" src="<%= skills[i].svg %>" width="45"/>
                                 </div>
                                 <h3><%- skills[i].title %></h3><br>
-                                <%- skills[i].content %>
+                                <%- include(appRoot+'/views/pages/skills/'+skills[i].content) %>
                             </div>
                         </div>
                     <% } %>

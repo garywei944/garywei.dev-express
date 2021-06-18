@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## 1.0.6
+### Fixed
+- Heroku Procfile
+
+
 ## 1.0.5
 ### Added
 - Use GitHUb Actions to deploy on heroku

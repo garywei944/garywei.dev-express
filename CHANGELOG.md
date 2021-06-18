@@ -6,6 +6,7 @@
 ## 1.0.4
 ### Added
 - Dockerfiles and nginx support
+- Makefile
 
 ## 1.0.3
 ### Changed

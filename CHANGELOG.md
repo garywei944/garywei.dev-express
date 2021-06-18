@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## 1.0.5
+### Added
+- Use GitHUb Actions to deploy on heroku
+
+
 ## 1.0.4
 ### Added
 - Dockerfiles and nginx support

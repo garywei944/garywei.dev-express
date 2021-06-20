@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## 1.0.7
+### Fixed
+- Fix BHSF and UMass
+
+
 ## 1.0.6
 ### Fixed
 - Heroku Procfile
@@ -11,6 +16,11 @@
 ## 1.0.5
 ### Added
 - Use GitHUb Actions to deploy on heroku
+
+
+## 1.0.7
+### Added
+- Add UNICODE SC+ in award section
 
 
 ## 1.0.4

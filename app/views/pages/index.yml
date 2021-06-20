@@ -107,12 +107,12 @@ education:
     img: "/images/avatar_umass.png"
     name: "University of Massachusetts Amherst"
     time: "2018 - now"
-    note: "bhsf"
+    note: "umass"
   - id: "education-bhsf"
     img: "/images/avatar_bhsf.png"
     name: "Beijing No.4 High School"
     time: "2015 - 2018"
-    note: "umass"
+    note: "bhsf"
 
 course:
   earned: 151
@@ -158,6 +158,10 @@ awards:
     title: "MCM: The Mathematical Contest in Modeling"
     date: "Feb 2021"
     content: "mcm"
+  - img: "/images/avatar_usc_cssa.jpg"
+    title: "Hackathon: UNICODE SC+"
+    date: "Sep 2020"
+    content: "unicode-sc"
   - img: "/images/avatar_umass.png"
     title: "Jacob-Cohen-Killam Mathematics Competition"
     date: "Apr 2019 & 2020"

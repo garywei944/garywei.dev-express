@@ -13,6 +13,11 @@
 - Use GitHUb Actions to deploy on heroku
 
 
+## 1.0.7
+### Added
+- Add UNICODE SC+ in award section
+
+
 ## 1.0.4
 ### Added
 - Dockerfiles and nginx support

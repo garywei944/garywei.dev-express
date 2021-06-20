@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## 1.0.7
+### Fixed
+- Fix BHSF and UMass
+
+
 ## 1.0.6
 ### Fixed
 - Heroku Procfile

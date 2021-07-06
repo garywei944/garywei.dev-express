@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## 1.0.8
+### Changed
+- Update bio typo
+
+
 ## 1.0.7
 ### Fixed
 - Fix BHSF and UMass

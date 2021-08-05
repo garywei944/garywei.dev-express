@@ -150,7 +150,7 @@ course:
       items:
         - "Algorithms for Data Science"
         - "App/NaturalLanguageProcessing"
-        - "Math Statistics I (Grad Level)"
+        - "Intro. Numerical Analysis I (Grad Level)"
         - "Neural Networks: Modern Intro (Grad Level)"
 
 awards:

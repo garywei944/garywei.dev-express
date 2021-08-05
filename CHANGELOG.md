@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## 1.0.9
+### Changed
+- Update README.md
+- Update 2021 Fall courses
+
 ## 1.0.8
 ### Changed
 - Update bio typo

@@ -3,6 +3,14 @@
 ## Unreleased
 
 
+## 1.1.0
+### Added
+- Unihack '21
+
+### Removed
+- web projects gethub repos
+
+
 ## 1.0.9
 ### Changed
 - Update README.md

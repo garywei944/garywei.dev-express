@@ -62,6 +62,31 @@
                 <span class="mouse-label"> Scroll </span> </a>
         </div>
         <!-- END .cover-v1 -->
+
+        <!-- About -->
+        <div class="unslate_co--section">
+            <div class="container">
+                <div class="section-heading-wrap text-center mb-5">
+                    <h2 class="heading-h2 text-center divider"><span class="gsap-reveal"> Academic Profile </span></h2>
+                    <span class="gsap-reveal"> <img alt="divider" src="/images/divider.png" width="76"/> </span>
+                </div>
+                <div class="row mt-5 justify-content-between">
+                    <div class="col-12 mb-lg-0">
+                        <h3 class="mb-4 heading-h3"><span class="gsap-reveal"> Checkout
+                                <a href="https://acad.garywei.dev/">
+                                    acad.garywei.dev
+                                </a>
+                                for my academic profile! </span></h3>
+                        <a href="https://acad.garywei.dev/">
+                            <figure class="dotted-bg gsap-reveal-img ">
+                                <img alt="Academic Profile" class="img-fluid" src="/images/academic_profile.jpg"/>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- About -->
         <div class="unslate_co--section" id="about-section">
             <div class="container">
@@ -119,7 +144,6 @@
                         <div class="filter-wrap">
                             <div class="filter ml-auto" id="filters">
                                 <a class="active" data-filter="*" href="#"> All </a>
-                                <a data-filter=".ai" href="#"> AI </a>
                                 <a data-filter=".os" href="#"> OS </a>
                                 <a data-filter=".web" href="#"> Web </a>
                                 <a data-filter=".iot" href="#"> IoT </a>
@@ -204,70 +228,7 @@
                 </div>
             </div>
         </div>
-        <!-- Coursework -->
-        <div class="unslate_co--section section-counter" id="coursework-section">
-            <div class="container">
-                <div class="section-heading-wrap text-center mb-5">
-                    <h2 class="heading-h2 text-center divider"><span class="gsap-reveal"> Coursework </span></h2>
-                    <span class="gsap-reveal"> <img alt="divider" src="/images/divider.png" width="76"/> </span>
-                </div>
-                <div class="row pt-5">
-                    <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-                        <div class="counter-v1 text-center">
-                <span class="number-wrap"> <span class="number number-counter"
-                                                 data-number="<%= course.earned %>"> 0 </span> <span
-                            class="append-text">
-                    .0 </span> </span>
-                            <span class="counter-label"> Credits earned </span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                        <div class="counter-v1 text-center">
-                <span class="number-wrap"> <span class="number number-counter"
-                                                 data-number="<%= course.taking %>"> 0 </span> <span
-                            class="append-text">
-                    .0 </span> </span>
-                            <span class="counter-label"> Credits taking (Fall 2021) </span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                        <div class="counter-v1 text-center">
-                            <span class="number-wrap"> <span class="number number-counter"
-                                                             data-number="<%= course.major[0] %>"> 0 </span> <span
-                                        class="append-text"> .<%= course.major[1] %> </span> </span>
-                            <span class="counter-label"> Major GPA (UGrad) </span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                        <div class="counter-v1 text-center">
-                            <span class="number-wrap"> <span class="number number-counter"
-                                                             data-number="<%= course.overall[0] %>"> 0 </span> <span
-                                        class="append-text"> .<%= course.overall[1] %> </span> </span>
-                            <span class="counter-label"> Overall GPA </span>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row justify-content-between">
 
-                    <% for (let i in course.list) { %>
-                        <div class="col-md-6">
-                            <div class="contact-info-v1">
-                                <div class="gsap-reveal d-block">
-                                    <span class="d-block contact-info-label"><%- course.list[i].title %></span>
-                                    <ul>
-                                        <% for (let j in course.list[i].items) { %>
-                                            <li><%- course.list[i].items[j] %></li>
-                                        <% } %>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    <% } %>
-                </div>
-            </div>
-        </div>
-        <!-- END Coursework -->
         <!-- Awards -->
         <div class="unslate_co--section" id="award-section">
             <div class="container">

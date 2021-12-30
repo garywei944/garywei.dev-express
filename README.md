@@ -53,5 +53,5 @@ I use GitHub Actions to push any changes made in `main` branch to Heroku. Check 
 ## Template
 The template could be downloaded at [Unfold - Colorlab](https://colorlib.com/wp/template/unfold/).
 
-## Licence
-MIT Licence is included in the project.
+## License
+[MIT License](LICENSE) is included in the project.

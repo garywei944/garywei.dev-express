@@ -3,32 +3,6 @@ bg_img: "/images/wlop/wlop (6)_wm.jpg"
 bio: "Hi! Here's Gary, a Computer Science &amp; Mathematics UGrad at UMass Amherst"
 
 projects:
-  - class: "ai"
-    link: "https://github.com/garywei944/FMol"
-    title: "FMol"
-    note: "AI, Drug Discovery - Aug 2020"
-    img: "/images/projects/project_fmol.jpg"
-  - class: "ai col-lg-8"
-    link: "https://github.com/garywei944/cs674_final_project"
-    title: "KPConv-PyTorch-ShapeNet-Part"
-    note: "AI, Computer Vision, PyTorch - May 2021"
-    img: "/images/projects/project_kpconv.jpg"
-  - class: "ai"
-    link: "https://github.com/garywei944/cics490e_research"
-    title: "Causal Structure Learning"
-    note: "AI, Causal Structure Learning, R - May 2021"
-    img: "/images/projects/project_causal_structure_learning.jpg"
-  - class: "ai"
-    link: "https://github.com/garywei944/aris_mcm_2021_c"
-    title: "MCM/ICM 2021 Problem C - RRS Combine Model"
-    note: "AI, Math Modeling - Feb 2021"
-    img: "/images/projects/project_mcm_2021_c.jpg"
-  - class: "ai"
-    link: "https://github.com/garywei944/aris_kaggle_lish-moa"
-    title: "Mechanisms of Action (MoA) Prediction"
-    note: "AI, Drug Discovery - Jan 2021"
-    img: "/images/projects/project_kaggle_lish-moa.jpg"
-
   - class: "os"
     link: "https://github.com/garywei944/eva_init"
     title: "eva_init"
@@ -108,45 +82,6 @@ education:
     name: "Beijing No.4 High School"
     time: "2015 - 2018"
     note: "bhsf"
-
-course:
-  earned: 151
-  taking: 22
-  major:
-    - 4
-    - 0
-  overall:
-    - 3
-    - 956
-  list:
-    - title: "Computer Science"
-      items:
-        - "Artificial Intelligence"
-        - "Computer Networks"
-        - "Formal Language Theory"
-        - "Game Programming"
-        - "Intelligent Visual Computing (Grad Level)"
-        - "Internet of Things"
-        - "Intro. Algorithms"
-        - "Intro. Computer and Network Security"
-        - "Intro. Software Engineering"
-        - "Machine Learning"
-        - "Operating Systems"
-        - "Web Programming"
-    - title: "Mathematics"
-      items:
-        - "Advanced Calculus"
-        - "Intro. Abstract Algebra I"
-        - "Intro. Modern Analysis"
-        - "Intro. Scientific Computing"
-        - "Linear Algebra for Applied Mathematics"
-        - "Mathematical Modeling"
-    - title: "Courses in Fall 2021"
-      items:
-        - "Algorithms for Data Science"
-        - "App/NaturalLanguageProcessing"
-        - "Intro. Numerical Analysis I (Grad Level)"
-        - "Neural Networks: Modern Intro (Grad Level)"
 
 awards:
   - img: "/images/avatar_usc_cssa.jpg"

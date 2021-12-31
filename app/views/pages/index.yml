@@ -21,7 +21,7 @@ projects:
     img: "/images/projects/arch_neofetch_v3.jpg"
 
   - class: "web ai col-lg-8"
-    link: "https://devpost.com/software/group-8"
+    link: "https://github.com/garywei944/Reconnect-Unihack21_Devil_Otter"
     title: "Reconnect System"
     note: "Web, AI - Aug 2021"
     img: "/images/projects/project_unihack21_reconnect.jpg"
@@ -121,6 +121,10 @@ awards:
     content: "noip"
 
 experience:
+  - quote: "bionlp"
+    img: "/images/avatar_umass_badge.png"
+    title: "UMass BioNLP Lab"
+    subtitle: "Research Assistant, May 2021 - now"
   - quote: "fmol"
     img: "/images/about_me_pic.jpg"
     title: "FMol"
@@ -145,10 +149,10 @@ skills:
     title: "All Platform Development"
     content: "os"
   - svg: "/images/svg/004-percentage.svg"
-    title: "Mathematical Modeling"
-    content: "math_model"
+    title: "Numerical Analysis"
+    content: "numerical_analysis"
   - svg: "/images/svg/006-goal.svg"
-    title: "Game Development"
+    title: "Game Programming - Unity"
     content: "game_dev"
   - svg: "/images/svg/005-line-chart.svg"
     title: "IoT - Arduino"

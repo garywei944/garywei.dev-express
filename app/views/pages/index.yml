@@ -1,6 +1,6 @@
-title: "Gary Wei | &AElig;r1S - No Life is Enough"
+title: "Gary Wei | ariseus - No Life is Enough"
 bg_img: "/images/wlop/wlop (6)_wm.jpg"
-bio: "Hi! Here's Gary, a Computer Science &amp; Mathematics UGrad at UMass Amherst"
+bio: "Hi! Here's Gary, a Master of Engineering in Computer Science at Cornell University"
 
 projects:
   - class: "ai"
@@ -20,16 +20,16 @@ projects:
     note: "OS, Linux - Since Jan 2020"
     img: "/images/projects/arch_neofetch_v3.jpg"
 
-  - class: "web ai col-lg-8"
-    link: "https://github.com/garywei944/Reconnect-Unihack21_Devil_Otter"
-    title: "Reconnect System"
-    note: "Web, AI - Aug 2021"
-    img: "/images/projects/project_unihack21_reconnect.jpg"
   - class: "web"
     link: "https://github.com/garywei944/CG3-Blog-Platform"
     title: "CG3 Blog Platform"
     note: "Web, Full Stack - May 2021"
     img: "/images/projects/project_cg3.jpg"
+  - class: "web ai col-lg-8"
+    link: "https://github.com/garywei944/Reconnect-Unihack21_Devil_Otter"
+    title: "Reconnect System"
+    note: "Web, AI - Aug 2021"
+    img: "/images/projects/project_unihack21_reconnect.jpg"
   - class: "web"
     link: "https://github.com/cicscareers/320-S20-Track1"
     title: "ReachOUT"
@@ -83,6 +83,11 @@ blogs:
     img: "/images/wlop/6_wm.jpg"
 
 education:
+  - id: "education-cornell"
+    img: "/images/avatar_cornell_c.png"
+    name: "Cornell University"
+    time: "2022 - 2023"
+    note: "cornell"
   - id: "education-umass"
     img: "/images/avatar_umass.png"
     name: "University of Massachusetts Amherst"
@@ -95,6 +100,10 @@ education:
     note: "bhsf"
 
 awards:
+  - img: "/images/avatar_umass_ctf.jpg"
+    title: "CTF: UMassCTF 2022"
+    date: "Apr 2022"
+    content: "umass_ctf_22"
   - img: "/images/avatar_usc_cssa.jpg"
     title: "Hackathon: Unihack '21"
     date: "Aug 2021"
@@ -155,5 +164,5 @@ skills:
     title: "Game Programming - Unity"
     content: "game_dev"
   - svg: "/images/svg/005-line-chart.svg"
-    title: "IoT - Arduino"
-    content: "iot"
+    title: "Cybersecurity"
+    content: "cybersecurity"

@@ -120,7 +120,7 @@
                                                          src="/images/logo_umass.png"/> </a>
                     </div>
                     <div class="logo-v1 gsap-reveal">
-                        <a href="#experience-section"> <img alt="CSSA Logo" class="img-fluid"
+                        <a href="#experience-umass-cssa"> <img alt="CSSA Logo" class="img-fluid"
                                                             src="/images/logo_umass_cssa.png"/> </a>
                     </div>
                     <div class="logo-v1 gsap-reveal">
@@ -260,27 +260,52 @@
         </div>
         <!-- END Awards -->
         <!-- Experience -->
+<!--        <div class="unslate_co--section" id="experience-section"> -->
+<!--            <div class="container"> -->
+<!--                <div class="section-heading-wrap text-center mb-5"> -->
+<!--                    <h2 class="heading-h2 text-center divider"><span class="gsap-reveal"> Experience </span></h2> <span -->
+<!--                            class="gsap-reveal"><img src="/images/divider.png" alt="divider" width="76"></span> -->
+<!--                </div> -->
+<!--            </div> -->
+<!--            <div class="owl-carousel testimonial-slider" data-aos="fade-up"> -->
+<!--                <% for (let i in experience) { %> -->
+<!--                    <div> -->
+<!--                        <div class="testimonial-v1"> -->
+<!--                            <div class="testimonial-inner-bg"><span class="quote">&ldquo;</span> -->
+<!--                                <blockquote><%- include(appRoot+'/views/pages/experience/'+experience[i].content) %></blockquote> -->
+<!--                            </div> -->
+<!--                            <div class="testimonial-author-info"><img src="<%= experience[i].img %>" alt="Image"> -->
+<!--                                <h3><%- experience[i].title %></h3> <span -->
+<!--                                        class="d-block position"><%- experience[i].subtitle %></span> -->
+<!--                            </div> -->
+<!--                        </div> -->
+<!--                    </div> -->
+<!--                <% } %> -->
+<!--            </div> -->
+<!--        </div> -->
         <div class="unslate_co--section" id="experience-section">
             <div class="container">
                 <div class="section-heading-wrap text-center mb-5">
-                    <h2 class="heading-h2 text-center divider"><span class="gsap-reveal"> Experience </span></h2> <span
-                            class="gsap-reveal"><img src="/images/divider.png" alt="divider" width="76"></span>
+                    <h2 class="heading-h2 text-center divider"><span class="gsap-reveal"> Experience </span></h2>
+                    <span class="gsap-reveal"> <img alt="divider" src="/images/divider.png" width="76"/> </span>
                 </div>
-            </div>
-            <div class="owl-carousel testimonial-slider" data-aos="fade-up">
-                <% for (let i in experience) { %>
-                    <div>
-                        <div class="testimonial-v1">
-                            <div class="testimonial-inner-bg"><span class="quote">&ldquo;</span>
-                                <blockquote><%- include(appRoot+'/views/pages/experience/'+experience[i].quote) %></blockquote>
-                            </div>
-                            <div class="testimonial-author-info"><img src="<%= experience[i].img %>" alt="Image">
-                                <h3><%- experience[i].title %></h3> <span
-                                        class="d-block position"><%- experience[i].subtitle %></span>
+                <div class="row gutter-v3">
+                    <% for(let i in experience) { %>
+                        <div id="<%- experience[i].id %>" class="col-md-6 col-lg-6 mb-4">
+                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                                <div class="wrap-icon mb-3">
+                                    <img alt="Image" src="<%= experience[i].img %>" width="45"/>
+                                </div>
+                                <h3><%- experience[i].name %></h3><br>
+
+                                <h5><%- experience[i].title %></h5><br>
+                                <h6><%- experience[i].time %></h6><br>
+
+                                <%- include(appRoot+'/views/pages/experience/'+experience[i].content) %>
                             </div>
                         </div>
-                    </div>
-                <% } %>
+                    <% } %>
+                </div>
             </div>
         </div>
         <!-- END Experience -->
